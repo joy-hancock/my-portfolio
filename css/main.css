@@ -92,6 +92,12 @@
     font-size: 16px;
   }
 
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
   body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1em;
@@ -100,33 +106,14 @@
     color: white;
     position: absolute;
   }
+
   p {
     font-size: 1.25rem;
   }
 
-  li {
-    margin: 0;
-    font-size: 1.25rem;
-  }
-
-  ul,
-  ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  a {
-    color: #1b1b27;
-    text-decoration: none;
-  }
-
-  h1, h2, h3, h4 {
-    margin: 0;
-  }
 
   h1 {
-    font-family: 'Alata', sans-serif;
+    font-family: 'Nunito-sans', sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
     color: #1b1b27;
@@ -135,7 +122,7 @@
 
   h2 {
     font-family: 'Alata', sans-serif;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 500;
     width: 100%;
   }
@@ -143,11 +130,13 @@
   h3 {
     font-family: 'Alata', sans-serif;
     font-size: 1.75rem;
+    margin: 0 0 40px 0;
   }
 
   h4 {
     font-family: 'Alata', sans-serif;
     font-size: 1.5rem;
+    margin: 0 0 20px 0;
   }
 
 
@@ -155,6 +144,7 @@
   span {
     font-weight:700;
     font-size: 1.125rem;
+    margin-top: 20px;
   }
 
   address {
@@ -183,10 +173,6 @@
     }
 
 
-  span {
-    margin-top: 20px;
-  }
-
   figure {
 
     margin: 20px 0 40px 0;
@@ -209,93 +195,22 @@
     width: 85%;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6
-  {
-    margin: 0;
-  }
 
   /************ Margins and paddings for elements *********/
 
 
-    h3 {
-      margin: 0 0 40px 0;
-    }
-
-    h4 {
-      margin: 0 0 20px 0;
-    }
-
-  header {
-    padding:30px 0 80px 0;
-  }
-
-
-  header nav {
-    padding: 0px 0 60px 0;
-  }
-
-  header nav ul li {
-    margin-bottom: 20px;
-  }
-
-
-  header .icons {
-    margin:60px 0 40px 0;
-
-  }
-
-  #projects {
-    padding: 60px 0 80px 0;
-  }
-
-  #projects h2 {
-    margin: 0 0 50px 0;
-  }
-
-  #projects p {
-    margin: 0;
-  }
-
-
-
-  .project-text {
-    margin: 0 0 30px 0;
-  }
-
-  .project-link-button {
-    margin: 40px 0 40px 0;
-  }
-
-
-  #skills {
-    padding: 60px 0 80px 0;
-  }
-
-  #skills h2 {
-    margin: 0 0 50px 0;
-  }
-
-  #skills h3 {
-    margin: 0
-  }
-
-  .skills-wrapper {
-    padding: 0 0 40px 0;
-  }
-
-  .skills-wrapper {
-    margin: 0 0 40px 0;
-  }
-
-  .skill,
+ .skill,
   .tool {
+    background-color: #804253;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19);
+    color:white;
     padding: 15px;
   }
+
 
   .skill {
     margin: 20px 0;
@@ -308,21 +223,6 @@
     padding: 0 0 80px 0;
   }
 
-  #about-section {
-    padding: 80px 0;
-  }
-
-  .about-me h2 {
-    margin: 0 0 40px 0;
-  }
-
-  .hobbies p{
-    margin-bottom: 20px;
-  }
-
-  .resume-button {
-   margin-top: 20px;
-  }
 
 
 
@@ -363,90 +263,121 @@
   }
 
   /*************** Header Styles *****************/
-  header {
-    color: #1b1b27;
-    background-color: #F0DD64;
+header {
+  color: #1b1b27;
+  background-color: #F0DD64;
+}
+
+header h1 {
+  padding: 60px 0 30px 0;
+}
 
 
+
+nav {
+  background-color: #804253;
+  padding: 30px 15px;
+  width: 100%;
+}
+
+a {
+  color: #f0dd64;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.menu {
+  list-style: none;
+}
+
+
+
+
+.item.button  {
+  background-color:#39a3d1;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19);
+}
+
+
+.item.button:hover {
+  background-color: #f0dd64;
+}
+
+.item.button a {
+  color: #f0dd64;
+    padding: 2px;
+}
+
+.item.button a:hover{
+  color: #804253;
+}
+
+
+/* Mobile Menu */
+.menu {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items:center;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px;
+}
+
+.toggle {
+  order: 1;
+  font-size: 1.3em;
+  margin-right:0;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .item {
+  display: block;
+}
+
+
+/* Social icons */
+
+.icons {
+    margin:30px 0 60px 0;
+    width:100%
   }
 
-
-  header h2 {
-    margin: 60px 0 0 0;
-    }
-
-header nav {
+.contact-icons {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
 }
 
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  header nav ul li {
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  header nav ul li a{
-    color: #1b1b27;
-  }
-
-  header nav ul li a:hover {
-    color: #804253;
-  }
-
-  nav #contact-button  {
-    background-color:#804253;
-    border-radius: 4px;
-    padding: 10px 10px;
-    color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19);
-
-  }
-
-  nav #contact-button:hover {
-    background-color: #1b1b27;
-    color: #F0DD64;
-
-  }
-
-
-  header h3 {
-    line-height: 1.5;
-
-  }
-
-  header .icons {
-    width:100%;
-
-
-  }
-
-header .contact-icons {
-  display: flex;
-  justify-content: center;
-}
-
-  header .contact-icons ul {
+  .contact-icons ul {
     width: 75%;
     display: flex;
     justify-content: space-evenly;
 
   }
-  header .contact-icons li {
+  .contact-icons li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
+
   }
 
   .contact-icons li a {
     transition: 1s ease;
+    color: #1b1b27;
+      font-size: 2.5rem;
   }
 
   .contact-icons li a:hover {
@@ -457,16 +388,25 @@ header .contact-icons {
     transition: 1s ease;
   }
 
+
+  /* Intro */
+
   /**************** Projects ********************/
+
   #projects {
     background-color: #804253;
+    padding: 60px 0 80px 0;
   }
 
   #projects h2 {
     text-align: center;
     color: white;
+    margin: 0 0 50px 0;
   }
 
+.project-text {
+    margin: 0 0 30px 0;
+  }
 
   .project-container {
     display: flex;
@@ -483,8 +423,6 @@ header .contact-icons {
     align-items: center;
   }
 
-
-
   .single-project h3 {
     font-weight: bold;
     margin-bottom: 40px;
@@ -495,19 +433,19 @@ header .contact-icons {
     width: 100%;
   }
 
-
-  span {
+  .single-project span {
     font-weight: 700;
   }
 
   .project-link-button {
+    font-size: 1em;
     background-color: #F0DD64;
     padding: 10px;
     border-radius: 4px;
     font-weight: 700;
     text-transform: uppercase;
     color: #1b1b27;
-
+      margin: 40px 0 40px 0;
   }
 
   .project-link-button:hover {
@@ -520,6 +458,7 @@ header .contact-icons {
 
   #skills {
     background-color: #F0DD64;
+    padding: 60px 0 80px 0;
   }
 
   #skills h2
@@ -527,37 +466,46 @@ header .contact-icons {
     color: #804253;
   }
 
+  #skills h2 {
+    margin: 0 0 50px 0;
+  }
+
+  #skills h3 {
+    margin: 0
+  }
+
+  .skills-wrapper {
+    padding: 0 0 40px 0;
+    margin: 0 0 40px 0;
+  }
+
   .subheader {
     color: #804253;
   }
-
-  .skill,
-  .tool {
-    background-color: #804253;
-    border-radius: 4px;
-    padding: 10px;
-    font-weight: 400;
-    text-transform: uppercase;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19);
-    color:white;
-  }
-
 
 
   /******************* About Section ****************/
 
   #about-section {
     background-color: #804253;
+    padding: 80px 0;
   }
 
   #about-section .content-wrapper {
     width: 85%;
-
   }
 
+  .about-me h2 {
+    margin: 0 0 40px 0;
+  }
 
+  .hobbies p{
+    margin-bottom: 20px;
+  }
 
-
+  .resume-button {
+   margin-top: 20px;
+  }
 
   .about-me h3 {
     color: white;
@@ -739,7 +687,7 @@ header .contact-icons {
      Modify as content requires.
      ========================================================================== */
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 700px) {
     /* Style adjustments for viewports that meet the condition */
 
   /**************************** Tablet Styles *******************************/
@@ -747,14 +695,59 @@ header .contact-icons {
   /************ Margins and paddings for Tablet elements *********/
 
   header {
-    padding: 80px 0 80px 0;
+    padding: 0 0 60px 0;
   }
 
-  header nav {
-    padding: 0px 0 80px 0;
+  h1 {
+    font-size: 2.5em;
   }
 
-  .intro {
+  h2 {
+    font-size: 2em;
+  }
+
+.menu {
+  justify-content: center;
+}
+
+
+
+
+
+.item.button {
+  display:none;
+}
+
+
+
+.toggle {
+  flex: 1;
+  text-align: right;
+  order: 2;
+}
+
+/* Button up from tablet screen */
+.menu li.button a {
+  padding: 10px 15px;
+  margin: 5px 0;
+}
+
+.button a {
+  background: #39a3d1;
+  border-radius: 5px;
+}
+
+.button a:hover {
+  text-decoration: none;
+}
+
+.button:not(.secondary) a:hover {
+  background: #F0DD64;
+}
+
+/* Intro section */
+
+  #intro {
     padding-top: 80px;
   }
 
@@ -822,7 +815,8 @@ header .contact-icons {
 
   /* Header */
 
-  header h1 { width: 100%;
+  header h1 {
+    width: 100%;
   }
 
   header .content-wrapper {
@@ -831,25 +825,7 @@ header .contact-icons {
     flex-flow: row wrap;
   }
 
-  header nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-transform: uppercase;
-  }
-
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-  }
-
-  header nav ul li {
-    font-size: 1rem;
-  }
-
-
-  header .intro {
+  #intro{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -937,33 +913,26 @@ header .contact-icons {
   }
 
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 960px) {
     /* Style adjustments for viewports that meet the condition */
 
   /**************************** Desktop Styles *******************************/
 
   /************ Margins and paddings for elements *********/
 
+  h1 {
+    font-size: 3em;
+  }
 
-
-  header {
-    padding: 80px 0 140px 0;
+  h2 {
+    font-size: 2.5em;
   }
 
 
+.icons {
+  padding-top: 60px;
 
-  header h1 {
-    margin: 0 0 40px 0;
-  }
-
-  .intro {
-    padding: 40px 0 0 0;
-  }
-
-  header .icons {
-    margin-top: 100px;
-    padding-bottom: 140px;
-  }
+}
 
   #projects {
     padding: 140px 0 0px 0;
@@ -984,7 +953,7 @@ header .contact-icons {
 
 
   #about-section {
-    padding: 140px 0 160px 0;
+    padding: 120px 0 160px 0;
   }
 
   .about-me h1 {
@@ -1003,20 +972,54 @@ header .contact-icons {
 
   /***********Header***********/
 
-  header .content-wrapper {
-    justify-content: flex-end;
-  }
+header .content-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
 
-  header nav {
-    justify-content: flex-end;
-    width: 45%;
-  }
-
-  header nav ul {
+  header h2 {
+    width: 70%;
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    align-items: center;
+    font-size: 2.5em;
   }
+
+/* Desktop Menu */
+
+nav {
+  display:flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.menu {
+  align-items: center;
+  flex-wrap: nowrap;
+  background: none;
+}
+
+
+
+.item {
+  order: 1;
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+
+.item.button {
+  padding: 0;
+  order: 2;
+  display: block;
+}
+
+.toggle {
+  display: none;
+}
 
 
 
@@ -1040,15 +1043,19 @@ header .contact-icons {
 
   .about-wrapper{
     justify-content: space-between;
-    align-items: center;
+
   }
 
   #about-section figure {
     width: 40%;
+    padding-top: 80px;
   }
+
+
 
   #profile-pic img {
     width: 80%;
+    padding-top: 20px;
   }
 
   .about-me-wrapper {
