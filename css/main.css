@@ -105,6 +105,8 @@
     line-height: 1.5;
     color: white;
     position: absolute;
+    height: 5000px;
+    background: linear-gradient(#F0DD64, #804253);
   }
 
   p {
