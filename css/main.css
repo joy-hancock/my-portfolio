@@ -106,13 +106,11 @@
     color: white;
     position: absolute;
     height: 5000px;
-
   }
 
   p {
     font-size: 1.25rem;
   }
-
 
   h1 {
     font-family: 'Nunito-sans', sans-serif;
@@ -140,8 +138,6 @@
     font-size: 1.5rem;
     margin: 0 0 20px 0;
   }
-
-
 
   span {
     font-weight:700;
@@ -174,84 +170,15 @@
       transition: .5s ease;
     }
 
-
-  figure {
-
-    margin: 20px 0 40px 0;
-  }
-
-
-  #projects,
-  #skills {
-    width: 100%;
-  }
-
-  #projects p,
-  #about-section p {
-    text-align: left;
-    width: 100%;
-
-  }
+    figure {
+      margin: 20px 0 40px 0;
+    }
 
   .content-wrapper {
     width: 85%;
   }
 
-
-  /************ Margins and paddings for elements *********/
-
-
- .skill,
-  .tool {
-    background-color: #804253;
-    border-radius: 4px;
-    padding: 10px;
-    font-weight: 400;
-    text-transform: uppercase;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19);
-    color:white;
-    padding: 15px;
-  }
-
-
-  .skill {
-    margin: 20px 0;
-  }
-
-  .tool {
-    margin-top: 20px;
-  }
-  .tools-wrapper {
-    padding: 0 0 80px 0;
-  }
-
-
-
-
-  footer {
-    padding:80px 0 60px 0;
-  }
-
-  footer h2 {
-    margin: 60px 0 30px 0;
-  }
-
-  #contact h2 {
-    margin:0 0 60px 0;
-  }
-
-  .contact-info {
-      margin: 0 0 60px 0;
-    }
-
-  .contact-info h3 {
-    margin: 0 0 30px 0;
-  }
-
-  footer .copyright p{
-    margin-top: 60px;
-  }
-     /*************** Header/Footer Base Styles ****************/
+/*************** Header/Footer Base Styles ****************/
 
   header,
     #about-section,
@@ -273,8 +200,6 @@ header {
 header h1 {
   padding: 60px 0 30px 0;
 }
-
-
 
 nav {
   background-color: #804253;
@@ -301,33 +226,32 @@ a:hover {
 }
 
 .item.button  {
-  background-color:#f0dd64;
+  background-color:#39a3d1;
   border-radius: 5px;
-
 }
 
 .item.button a{
-  color:#804253;
+  color:white;
 }
 
 .button:hover {
-  background-color: #804253;
+
+  background-color: #f0dd64;
   opacity:1;
     transition: 1s ease;
-    box-shadow: 1px 1px #F0DD64,
-      2px 2px #F0DD64,
-      3px 3px #F0DD64,
-      4px 4px #F0DD64,
-      5px 5px #F0DD64,
-      6px 6px #F0DD64;
+    box-shadow: 1px 1px #39a3d1,
+      2px 2px #39a3d1,
+      3px 3px #39a3d1,
+      4px 4px #39a3d1,
+      5px 5px #39a3d1,
+      6px 6px #39a3d1;
       -webkit-transform: translateX(-3px);
       transform: translateX(-3px);
       transition: .5s ease;
-      border: solid #f0dd64 1px;
+      border: solid #39a3d1 1px;
 }
-
 .item.button a:hover {
-  color: #f0dd64;
+  color: #804253;
 }
 
 
@@ -343,8 +267,6 @@ a:hover {
   display: block;
   padding: 15px;
 }
-
-
 
 .toggle {
   order: 1;
@@ -367,6 +289,7 @@ a:hover {
   display: block;
 }
 
+  /* Intro */
 
 /* Social icons */
 
@@ -380,47 +303,51 @@ a:hover {
   justify-content: center;
 }
 
-  .contact-icons ul {
-    width: 75%;
-    display: flex;
-    justify-content: space-evenly;
+.contact-icons ul {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-  }
-  .contact-icons li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact-icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
+.contact-icons li a {
+  transition: 1s ease;
+  color: #1b1b27;
+  font-size: 2.5rem;
+}
 
-  .contact-icons li a {
-    transition: 1s ease;
-    color: #1b1b27;
-      font-size: 2.5rem;
-  }
-
-  .contact-icons li a:hover {
-    color: #804253;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: 1s ease;
-  }
+.contact-icons li a:hover {
+  color: #804253;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
 
 
-  /* Intro */
 
   /**************** Projects ********************/
 
   #projects {
     background-color: #804253;
     padding: 60px 0 80px 0;
+    width: 100%;
   }
 
   #projects h2 {
     text-align: center;
     color: white;
     margin: 0 0 50px 0;
+  }
+
+  #projects p {
+    text-align: left;
+    width: 100%
   }
 
 .project-text {
@@ -478,19 +405,16 @@ a:hover {
   #skills {
     background-color: #F0DD64;
     padding: 60px 0 80px 0;
-  }
-
-  #skills h2
-   {
-    color: #804253;
+      width: 100%;
   }
 
   #skills h2 {
+    color: #804253;
     margin: 0 0 50px 0;
   }
 
-  #skills h3 {
-    margin: 0
+  .subheader {
+    color: #804253;
   }
 
   .skills-wrapper {
@@ -498,10 +422,29 @@ a:hover {
     margin: 0 0 40px 0;
   }
 
-  .subheader {
-    color: #804253;
+  .skill,
+  .tool {
+    background-color: #804253;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19);
+    color:white;
+    padding: 15px;
   }
 
+  .skill {
+    margin: 20px 0;
+  }
+
+  .tools-wrapper {
+    padding: 0 0 80px 0;
+  }
+
+  .tool {
+    margin-top: 20px;
+  }
 
   /******************* About Section ****************/
 
@@ -514,6 +457,10 @@ a:hover {
     width: 85%;
   }
 
+    #about-section p {
+    text-align: left;
+    width: 100%;
+  }
   .about-me h2 {
     margin: 0 0 40px 0;
   }
@@ -530,15 +477,20 @@ a:hover {
     color: white;
   }
 
-
-
-
   /****************Footer Styles ********************/
 
   footer {
     color: white;
     background-color: #1b1b27;
+    padding:80px 0 60px 0;
   }
+
+  footer .contact-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    }
 
   footer h2,
   footer h3,
@@ -549,18 +501,23 @@ a:hover {
     color: white;
   }
 
-  footer .contact-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
+  footer h2 {
+    margin: 60px 0 30px 0;
   }
 
   footer .contact-info {
     width: 60%;
     color: white;
+    margin: 0 0 60px 0;
   }
 
+  .contact-info h3 {
+    margin: 0 0 30px 0;
+  }
+
+  #contact h2 {
+    margin:0 0 60px 0;
+  }
 
   footer a {
     color: white;
@@ -577,13 +534,13 @@ a:hover {
     color: white;
   }
 
-
   footer .social-icons {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     color: white;
+    font-size:3em;
   }
 
   footer ul {
@@ -595,43 +552,41 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
     margin: 0 3px 0 3px;
-
   }
 
   footer .social-icons li a {
     color: white;
     transition: 1s ease;
     margin: 0 8px;
+    font-size: 0.75em;
   }
 
   footer .social-icons li a:hover {
-    color: #F0DD64;
+    color: #39a3d1;
     -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  transition: 1s ease;
-
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
   }
+
+  footer .copyright p {
+  margin-top: 60px;
+  }
+
 
   /* Back to Top Button */
 
-
 .back-to-top {
   position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  padding: 0.5rem;
+  right: 0.5em;
+  bottom: 0.5em;
   border: none;
   cursor: pointer;
   opacity: 100%;
-  transition: opacity 0.5s;
   background: none;
   color: #39a3d1;
-  font-size: 2.5em;
-
-
+  font-size: 1.75em;
 }
 
 .back-to-top:hover {
@@ -646,14 +601,6 @@ a:hover {
   width: 1rem;
   height: 1rem;
   color: #7ac9f9;
-}
-
-.progress-bar {
-  height: 1rem;
-  background: white;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 
@@ -958,6 +905,8 @@ a:hover {
     justify-content: space-between;
   }
 
+
+
   }
 
 
@@ -976,6 +925,10 @@ a:hover {
     font-size: 2.5em;
   }
 
+.back-to-top {
+  font-size: 2em;
+  right:1.5em;
+}
 
 .icons {
   padding-top: 60px;
